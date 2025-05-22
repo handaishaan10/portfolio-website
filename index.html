@@ -480,8 +480,8 @@
             content: '';
             position: absolute;
             left: calc(1rem + 1.5rem / 2 - 1px);
-            top: calc(1.5rem + 1.5rem); /* Adjusted to connect from bottom of circle */
-            height: calc(100% - (1.5rem + 1.5rem)); /* Adjusted height */
+            top: calc(1.5rem + 1.5rem); 
+            height: calc(100% - (1.5rem + 1.5rem)); 
             width: 2px;
             background-color: rgba(255, 255, 255, 0.2);
         }
@@ -731,10 +731,11 @@
                     });
                 }
 
-                // Close mobile menu if open
+                
                 if (window.innerWidth <= 995) {
-                    const navbar = document.querySelector('.navbar'); // Define navbar here
-                    const menuIcon = document.querySelector('#menu-icon'); // Define menuIcon here
+                    const navbar = document.querySelector('.navbar'); 
+                    const menuIcon = document.querySelector('#menu-icon'); 
+                
                     navbar.classList.remove('active');
                     menuIcon.classList.remove('fa-xmark');
                     menuIcon.classList.add('fa-bars');
