@@ -412,13 +412,17 @@
         }
 
         .skills .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            display: flex; 
+            flex-wrap: nowrap; 
+            justify-content: center; 
             gap: 2rem;
-            width: 100%;
-            max-width: 800px;
+            width: 120%;
+            max-width: 1200px; 
             margin-top: 3rem;
-        }
+            overflow-x: auto; 
+            padding-bottom: 1rem; 
+            padding-top: 2rem ;
+            }
 
         .skills .skill-item {
             background-color: var(--background-dark);
@@ -634,32 +638,27 @@
             <div class="skill-item">
                 <i class="fa-solid fa-code"></i>
                 <h3>Web Development</h3>
-                <p>HTML, CSS, JavaScript, React, Node.js</p>
+                <p>HTML , CSS , JavaScript</p>
             </div>
             <div class="skill-item">
                 <i class="fa-solid fa-terminal"></i>
                 <h3>Programming</h3>
-                <p>Python, C++, Java</p>
+                <p>Python</p>
             </div>
             <div class="skill-item">
                 <i class="fa-solid fa-robot"></i>
                 <h3>Robotics</h3>
-                <p>Arduino, Raspberry Pi, Sensor Integration</p>
+                <p>Arduino , Sensor Integration</p>
             </div>
             <div class="skill-item">
                 <i class="fa-solid fa-palette"></i>
                 <h3>Graphic Design</h3>
-                <p>Adobe Photoshop, Illustrator, Figma</p>
+                <p>Basic Photoshop , Figma</p>
             </div>
             <div class="skill-item">
                 <i class="fa-solid fa-database"></i>
                 <h3>Databases</h3>
-                <p>SQL, MongoDB</p>
-            </div>
-            <div class="skill-item">
-                <i class="fa-solid fa-cloud"></i>
-                <h3>Cloud Basics</h3>
-                <p>AWS, Azure (Beginner)</p>
+                <p>SQL</p>
             </div>
         </div>
     </section>
