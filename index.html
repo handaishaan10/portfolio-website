@@ -257,14 +257,17 @@
         @keyframes words {
             0%, 16% { content: "Web Developer"; }
             17%, 19% { content: ""; }
-            
-            40%, 56% { content: "Byte"; }
+
+            20%, 36% { content: "Byte"; }
+            37%, 39% { content: ""; }
+
+            40%, 56% { content: "Entrepreneur"; }
             57%, 59% { content: ""; }
 
-            60%, 76% { content: "Entrepreneur"; }
+            60%, 76% { content: "Graphic Designer"; }
             77%, 79% { content: ""; }
 
-            80%, 96% { content: "Graphic Designer"; }
+            80%, 96% { content: "Script Writer"; }
             97%, 100% { content: ""; }
         }
 
@@ -477,8 +480,8 @@
             content: '';
             position: absolute;
             left: calc(1rem + 1.5rem / 2 - 1px);
-            top: calc(1.5rem + 1.5rem); 
-            height: calc(100% - (1.5rem + 1.5rem)); 
+            top: calc(1.5rem + 1.5rem);
+            height: calc(100% - (1.5rem + 1.5rem));
             width: 2px;
             background-color: rgba(255, 255, 255, 0.2);
         }
@@ -618,7 +621,7 @@
                 <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                 <a href="https://x.com/yourprofile" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
-            <a href="#contact" class="btn">Contact me</a>
+            <a href="#contact" class="btn">Hire me</a>
         </div>
         <div class="home-img">
             <img src="main.jpg" alt="Ishaan's Profile Picture">
@@ -728,11 +731,9 @@
                     });
                 }
 
-                
                 if (window.innerWidth <= 995) {
-                    const navbar = document.querySelector('.navbar'); 
-                    const menuIcon = document.querySelector('#menu-icon'); 
-                
+                    const navbar = document.querySelector('.navbar');
+                    const menuIcon = document.querySelector('#menu-icon');
                     navbar.classList.remove('active');
                     menuIcon.classList.remove('fa-xmark');
                     menuIcon.classList.add('fa-bars');
